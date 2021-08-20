@@ -1,89 +1,207 @@
-/*------------------------------------------CLASSES------------------------------------------*/
-.parent_page {
-    width: 100%;
-    height: 3840px;
-    min-height: 3840px;
-    margin: 0;
-    padding: 0;
-    /*display: table;*/
-    /*outline: 1px solid #000;*/
-}
+/*CLASSES*/
 
-.in_parent_page {
+.page {
+    height: 725px;
     width: 100%;
-    height: 25%;
-    min-height: 25%;
-    display: table;
-    /*outline: 1px solid #000;*/
-}
-
-.index_input_content {
-    height: 100%;
-    width: 100%;
-    /*border: 1px double black;*/
-}
-
-.navbar_contacts {
-    width: 100%;
-    height: 80px;
-    margin: 0;
-    padding: 0;
-    display: table;
-    outline: 1px solid #000;
-}
-
-.page_1_main_content {
-    width: 100%;
-    height: 800px;
-    margin: 0;
-    padding: 0.1px 0;
-    display: table-row;
-    /*outline: 1px solid #000;*/
-}
-
-.in_page_1_main_content {
-    width: 50%;
-    min-height: 500px;
-    margin: 70px 0 70px 10px;
-    /*outline: 1px solid #000;*/
+    /*border: 1px solid;*/
 }
 
 .navbar {
+    min-height: 5em;
     width: 100%;
-    height: 50px;
-    margin-top: 0;
-    padding: 0;
-    outline: 1px solid #000;
+    /*background: aquamarine;*/
+    overflow: auto;
+    /*border: 1px solid;*/
 }
 
-.more {
-    font-size: 30px;
-    text-decoration: underline;
+.nav-logo-phones {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    min-height: 5em;
+    width: 22%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-a:link {
-    color: #212529;
+.nav-cell {
+    min-height: 5em;
+    width: 14%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    /*font-size: 36px;*/
+    /* line-height: 44px;*/
+     /*при изменение размера верха картинка и текст улетают вниз*/
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid;*/
 }
 
-a:visited {
-    color: #212529;
+.main-cont {
+    min-height: 650px;
+    width: 100%;
+    /*background: blueviolet;*/
+    overflow: auto;
+    /*border: 1px solid;*/
 }
 
-/*--------------------------------------------TAGS--------------------------------------------*/
+.ind-cont-text {
 
-hr {
-    color: black;
-    width: 99%;
-    size: 1px;
-    margin: 0 0.5% 0 0.5%;
-    padding: 0;
+
+    float: left;
+    min-height: 650px;
+    max-width: 50%;
+    /*background: coral;*/
 }
+
+.ind-cont-text-up {
+    font-family: 'Montserrat', sans-serif;
+
+
+    min-height: 150px;
+    width: 80%;
+    float: top;
+    margin: 50px 10% 0 10%;
+}
+
+.ind-cont-text-btn { /*кнопка*/
+
+    min-height: 4em;
+    width: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black
+}
+
+.ind-cont-pict {
+    float: right;
+    min-height: 650px;
+    width: 50%;
+    padding-bottom: 0;
+    /*text-align: center;*/
+    position: relative;
+    /*background: chartreuse;*/
+    /*border: 1px solid black*/
+}
+
+.ind-cont-pict img {
+    position: absolute;
+    bottom: 0
+}
+.ind-clown-pict{
+
+
+}
+
+.acomp-cont {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    min-height: 650px;
+    width: 95%;
+    margin-left: 5%;
+    /*background: darkorange;*/
+    /*border: 1px solid black*/
+}
+
+.test {
+    max-height: 30px;
+    min-width: 50%;
+    float: left;
+    /*border: 1px solid;*/
+}
+
+
+/*TAGS*/
 
 body {
-    margin: 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,
-    "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-weight: 100;
-    /*line-height: 1.5;*/
-    color: #212529;
+    /*position: relative;*/
+    /*margin: 0;*/
+
+    /*padding: 0;*/
+    /*background: linear-gradient(162.36deg, #9AC7F1 7.34%, #476BEB 69.76%);*/
+    /*background: #cbe2c1;*/
+    background: cornflowerblue;
+    background: -webkit-linear-gradient(to right, #9AC7F1, #476BEB);
+    background: -moz-linear-gradient(to right, #9AC7F1, #476BEB);
+    background: linear-gradient(to right, #9AC7F1, #476BEB);
+    padding: 44px 0 22px 0;
+
+
+}
+
+table {
+    /*border: 1px;*/
+    /*width: 100%;*/
+}
+
+td {
+    padding: 5px;
+    /*border: 2px solid;*/
+}
+
+td:first-child {
+    width: 150px;
+}
+
+/*TABLES*/
+
+.acomp-table-first tr:first-child td:first-child {
+    height: 50px;
+
+}
+.acomp-table-first tr:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+}
+
+.acomp-table-first td:first-child {
+    height: 150px;
+    text-align: center;
+}
+
+.acomp-table-first tr:last-child td:first-child {
+    height: 15px;
+
+}
+.acomp-table-second tr:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+}
+
+.acomp-table-second td:first-child{
+    text-align: right;
+    height: 20px;
+}
+.acomp-table-third tr:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+
+}
+
+.acomp-table-third td:first-child {
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
 }
